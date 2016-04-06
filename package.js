@@ -13,8 +13,3 @@ Package.onUse(function (api) {
   api.add_files(['synced-cron-server.js'], "server");
   api.export('SyncedCron', 'server');
 });
-
-Package.onTest(function (api) {
-  api.use(['percolate:synced-cron', 'tinytest']);
-  api.add_files('synced-cron-tests.js', ['server']);
-});
